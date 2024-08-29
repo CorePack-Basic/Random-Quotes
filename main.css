@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    width: 700px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    position: relative;
+}
+.container h2 {
+    text-align: center;
+    position: relative;
+}
+.container h2::before {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    background-color: rgb(23, 124, 229);
+    height: 3px;
+    width: 100px;
+    opacity: .7;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+}
+.container q {
+    text-align: center;
+    display: block;
+    margin-top: 31px;
+    padding: 12px;
+    line-height: 35px;
+    font-size: 21px;
+}
+.container span {
+    text-align: right;
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.buttons {
+    margin-top: 14px;
+    text-align: center;
+}
+.buttons button {
+    margin-right: 10px;
+    outline: none;
+    border: none;
+    background-color: rgb(23, 124, 229);
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.buttons button i {
+    margin-right: 6px;
+    color: rgb(23, 124, 229);
+}
+.buttons button:nth-child(2) {
+    background-color: white;
+    border: 1px solid rgb(23, 124, 229);
+    color: black;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+.buttons button:nth-child(2):hover {
+    background-color: rgb(23, 124, 229);
+    color: white;
+}
+.buttons button:nth-child(2):hover i {
+    color: white;
+}
